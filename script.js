@@ -6,7 +6,7 @@ var currentDayEl = $("#currentDay").text(todayDate);
 
 // TODO: Build the container for time blocks
 
-var displayTimeBlocks = function(){
+/*var displayTimeBlocks = function(){
     var plannerBody = $("#dayPlannerTable");
     for (var i = 0; i <= 9; i++){
         var newTask = $(`
@@ -21,6 +21,7 @@ var displayTimeBlocks = function(){
         }
 }
 displayTimeBlocks();
+*/
 
 // TODO: each time block is color-coded to indicate whether it is in the past, present, or future
 
