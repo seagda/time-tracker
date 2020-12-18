@@ -4,6 +4,7 @@
 var todayDate = moment().format("dddd, MMMM Do");
 var currentDayEl = $("#currentDay").text(todayDate);
 
+console.log();
 // TODO: Build the container for time blocks
 
 /*var displayTimeBlocks = function(){

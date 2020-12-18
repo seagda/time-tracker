@@ -20,36 +20,77 @@
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
-<!-- Timeblocks go here -->
-
-    <table class="time-block">
-      <thead>
-        <tr>
-          <td class="col-md-1">Hour</td>
-          <td class="col-md-11">Tasks</td>
-          <td class="col-md-1"></td>
-        </tr>
-      </thead>
-      <tbody>
-<!-- Insert time rows here-->
-        <tr>
-          <td class="col-md-1 hour">9 AM</td>
-          <td class="col-md-10"><textarea data-time="1"></textarea></td>
-          <td class="col-md-1"><button class="saveBtn">Save</button></td>
-        </tr>
-      </tbody>
-    </table>
-<!-- trying tables versus divs to see which is better -->
+    <!-- Timeblocks go here -->
     <div class="time-block">
 
+    <!-- Insert time rows here-->
+
       <div class="row">
-        <div class="hour col-md-1">9AM</div>
-        <textarea class="col-md-10"></textarea>
-        <button class="saveBtn col-md-1">Save</button>
+        <div class="hour col-md-2">8 AM</div>
+        <textarea class="col-md-9" id="tasksHour8"></textarea>
+        <button class="saveBtn col-md-1" data-hour="8" id="hour8">Save</button>
       </div>
 
+      <div class="row">
+        <div class="hour col-md-2">9 AM</div>
+        <textarea class="col-md-9" id="tasksHour9"></textarea>
+        <button class="saveBtn col-md-1" data-hour="9" id="hour9">Save</button>
+      </div>
+
+      <div class="row">
+        <div class="hour col-md-2">10 AM</div>
+        <textarea class="col-md-9" id="tasksHour10"></textarea>
+        <button class="saveBtn col-md-1" data-hour="10" id="hour10">Save</button>
+      </div>
+
+      <div class="row">
+        <div class="hour col-md-2">11 AM</div>
+        <textarea class="col-md-9" id="tasksHour11"></textarea>
+        <button class="saveBtn col-md-1" data-hour="11" id="hour11">Save</button>
+      </div>
+
+      <div class="row">
+        <div class="hour col-md-2">12 PM</div>
+        <textarea class="col-md-9" id="tasksHour12"></textarea>
+        <button class="saveBtn col-md-1" data-hour="12" id="hour12">Save</button>
+      </div>
+
+      <div class="row">
+        <div class="hour col-md-2">1 PM</div>
+        <textarea class="col-md-9" id="tasksHour13"></textarea>
+        <button class="saveBtn col-md-1" data-hour="13" id="hour13">Save</button>
+      </div>
+
+      <div class="row">
+        <div class="hour col-md-2">2 PM</div>
+        <textarea class="col-md-9" id="tasksHour14"></textarea>
+        <button class="saveBtn col-md-1" data-hour="14" id="hour14">Save</button>
+      </div>
+
+      <div class="row">
+        <div class="hour col-md-2">3 PM</div>
+        <textarea class="col-md-9" id="tasksHour15"></textarea>
+        <button class="saveBtn col-md-1" data-hour="15" id="hour15">Save</button>
+      </div>
+
+      <div class="row">
+        <div class="hour col-md-2">4 PM</div>
+        <textarea class="col-md-9" id="tasksHour16"></textarea>
+        <button class="saveBtn col-md-1" data-hour="16" id="hour16">Save</button>
+      </div>
+
+      <div class="row">
+        <div class="hour col-md-2">5 PM</div>
+        <textarea class="col-md-9" id="tasksHour17"></textarea>
+        <button class="saveBtn col-md-1" data-hour="17" id="hour17">Save</button>
+      </div>
+
+
+
+      <!-- timeblock div ends below -->
     </div>
 
+    <!-- container div ends below -->
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
