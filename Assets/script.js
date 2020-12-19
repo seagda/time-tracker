@@ -6,13 +6,7 @@ var currentDayEl = $("#currentDay").text(todayDate);
 
 console.log();
 
-// TODO: each time block is color-coded to indicate whether it is in the past, present, or future
-
-// TODO: Get local time 
-
-// TODO: User needs to be able to enter an event
-
-// TODO: Add onclick event for the save button
+// Add onclick event for the save button
 
 $("button").click(function(){
     var thisHour = $(this).attr("data-hour");
@@ -20,17 +14,26 @@ $("button").click(function(){
     var thisTask = $(`#tasksHour${thisHour}`).val();
     console.log(thisTask);
 
+// save event text to localstorage
+
     localStorage.setItem(thisHour, thisTask);    
 });
 
-// TODO: save event text to localstorage
-
-// TODO: On reload, get data from localstorage and show in the textarea
+// On reload, get data from localstorage and show in the textarea
 $(document).ready(function(){
-    for(var i=8; i <= 17; i++){  
-        var taskStored = localStorage.getItem(i);
-        var dispTask = $(`#tasksHour${i}`).val(taskStored);
+    var currTime = Number(moment().format("k"));
+    console.log(typeof currTime);
+    for(var hour=8; hour <= 17; hour++){  
+        var taskStored = localStorage.getItem(hour);
+        var dispTask = $(`#tasksHour${hour}`).val(taskStored);
+        console.log(dispTask);
+
+        if (hour === currTime){
+            dispTask.addClass("present");
+        } else if (hour < currTime){
+            dispTask.addClass("past");
+        } else {
+            dispTask.addClass("future");
+        }
     }
-
-
 })
