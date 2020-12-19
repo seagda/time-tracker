@@ -19,8 +19,18 @@ $("button").click(function(){
     console.log(thisHour);
     var thisTask = $(`#tasksHour${thisHour}`).val();
     console.log(thisTask);
+
+    localStorage.setItem(thisHour, thisTask);    
 });
 
 // TODO: save event text to localstorage
 
 // TODO: On reload, get data from localstorage and show in the textarea
+$(document).ready(function(){
+    for(var i=8; i <= 17; i++){  
+        var taskStored = localStorage.getItem(i);
+        var dispTask = $(`#tasksHour${i}`).val(taskStored);
+    }
+
+
+})
