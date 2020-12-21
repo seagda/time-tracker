@@ -2,7 +2,7 @@
 
 ## DESCRIPTION
 
-A simple day plannet that allows a user to save events for each hour of the day by modifying starter code. This browser based runs in the browser and feature dynamically updated HTML and CSS powered by jQuery, Bootstrap, and the [Moment.js](https://momentjs.com/) library to work with dates and times. `Moment.js` has historically been the most popular date/time library but is no longer supported by its developers, so this application should be updated to reflect a different product offering. 
+A simple day planner that allows a user to save events for each hour of the day by modifying starter code. This browser based runs in the browser and feature dynamically updated HTML and CSS powered by jQuery, Bootstrap, and the [Moment.js](https://momentjs.com/) library to work with dates and times. `Moment.js` has historically been the most popular date/time library but is no longer supported by its developers, so this application should be updated to reflect a different product offering. 
 
 ### OPTIONS FOR FUTURE REFRACTION
 
@@ -33,6 +33,6 @@ GIVEN the user needs a daily planner to create a schedule, this application meet
 
 * The following image shows the web application's appearance and functionality:
 
-![time tracker demo](assets/05-third-party-apis-homework-demo.png)
+![time tracker demo](assets/05-third-party-apis-homework-demo.gif)
 
 Code developed by @seagda, December 2020
