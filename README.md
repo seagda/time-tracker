@@ -33,6 +33,6 @@ GIVEN the user needs a daily planner to create a schedule, this application meet
 
 * The following image shows the web application's appearance and functionality:
 
-![password generator demo](assets/05-third-party-apis-homework-demo.png)
+![time tracker demo](assets/05-third-party-apis-homework-demo.png)
 
 Code developed by @seagda, December 2020
